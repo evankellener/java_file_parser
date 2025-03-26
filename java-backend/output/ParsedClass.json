@@ -1,0 +1,10 @@
+{
+  "className": "ParsedClass",
+  "methods": [
+    {
+      "methodName": "sayHello",
+      "returnType": "void",
+      "javadoc": ""
+    }
+  ]
+}

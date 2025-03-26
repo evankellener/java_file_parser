@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--
+    defines the model version, 
+    -->
+    <modelVersion>4.0.0</modelVersion>
+    <!--
+    organization name space 
+    -->
+    <groupId>com.evankellener</groupId>
+    <!--
+    name of the project, like a repo name
+    -->
+    <artifactId>java-backend</artifactId>
+    <!--
+    version used, '1.0-SNAPSHOT' is usually used to signify something is in demo
+    -->
+    <version>1.0-SNAPSHOT</version>
+
+    <!--
+    information about depencies to download
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+    </dependencies>
+
+    <!--
+    build plugin to run the app
+    -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.evankellener.backend.Main</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
