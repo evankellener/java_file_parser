@@ -80,17 +80,47 @@ This project will evolve into a Smart Documentation Assistant using LangChain, w
 
 ## Running the server
 
-1. cd into node-backend and run the index.js file
+1. cd into node-backend and run the index.js file:
    ```
    cd node-backend
    node index.js
    ```
+
    you should get the following message:
    ```
    Server is running on http://localhost:3000
    ```
 
+## Connecting To OpenAi LLM
 
+1. Input your own API token in the .env file:
+   ```
+   OPENAI_API_KEY="sk-proj-.....jdUq"
+   ```
+
+2. Install the requirmenets.txt file:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Ensure the express.js server is running and run the langchainTool.py:
+   ```
+   python langchainTool.py
+   ```
+   you should get the following message:
+   
+   ```
+   > Entering new AgentExecutor chain...
+   I should use the GetJavaClassStructure tool to find out the structure of the Java class.
+   Action: GetJavaClassStructure
+   Action Input: x (the Java class in question)
+   Observation: {'className': 'ParsedClass', 'methods': [{'methodName': 'sayHello', 'returnType': 'void', 'javadoc': ''}]}
+   Thought:The Java class is named ParsedClass and contains a method called sayHello that returns void.
+   Final Answer: The Java class contains a method named sayHello that returns void.
+
+   > Finished chain.
+   The Java class contains a method named sayHello that returns void.
+   ```
 
 ## Technology Stack
 - Java
@@ -99,5 +129,3 @@ This project will evolve into a Smart Documentation Assistant using LangChain, w
 - LangChain (future)
 - Node.js (JavaScript runtime)
 - Express.js (web framework)
-
-test
