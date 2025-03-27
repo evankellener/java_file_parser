@@ -1,5 +1,31 @@
 # Java Smart Documentation Assistant
 
+## Project Structure
+
+java-backend/
+├── output
+│  └──ParsedClass.json  <- parsed files
+├── target/classes/com/user/backend
+│   └──Main.class
+│   ├── JavaFileParser.class
+│   ├── ParsedClass.class
+│   └── ParsedMethod.class
+├── src/
+│   └── main/
+│       └── java/
+│           └── your/package/name/
+│               ├── Main.java
+│               ├── JavaFileParser.java
+│               ├── ParsedClass.java
+│               └── ParsedMethod.java
+├── pom.xml
+node_modules/
+node-backend/
+├── index.js   <-main serve file
+├── package.json 
+package-lock.json
+package.json
+
 ## Current State
 This project is a Java file parser that extracts class and method information from Java source files and outputs it as structured JSON. Currently, it:
 
@@ -42,7 +68,7 @@ This project will evolve into a Smart Documentation Assistant using LangChain, w
 
 2. Run the parser:
    ```
-   [comment]: <> (Change 'path/to/JavaFile.java' to whateve file you want to parse)
+   #Change 'path/to/JavaFile.java' to whateve file you want to parse
    mvn exec:java -Dexec.args="path/to/JavaFile.java"
    ```
 
@@ -56,3 +82,5 @@ This project will evolve into a Smart Documentation Assistant using LangChain, w
 - Maven
 - Gson (for JSON processing)
 - LangChain (future)
+- Node.js (JavaScript runtime)
+- Express.js (web framework)
