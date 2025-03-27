@@ -1,7 +1,7 @@
 # Java Smart Documentation Assistant
-
+<pre> <code>
 ## Project Structure
-
+```
 java-backend/
 ├── output
 │  └──ParsedClass.json  <- parsed files
@@ -25,6 +25,7 @@ node-backend/
 ├── package.json 
 package-lock.json
 package.json
+``` </code> </pre>
 
 ## Current State
 This project is a Java file parser that extracts class and method information from Java source files and outputs it as structured JSON. Currently, it:
