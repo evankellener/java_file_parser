@@ -1,4 +1,4 @@
-package src.main.java.com.evankellener.backend;
+package com.evankellener.backend;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

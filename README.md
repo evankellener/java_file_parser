@@ -36,11 +36,13 @@ This project will evolve into a Smart Documentation Assistant using LangChain, w
 ## Getting Started
 1. Build the project:
    ```
+   cd java-backend
    mvn compile
    ```
 
 2. Run the parser:
    ```
+   [comment]: <> (Change 'path/to/JavaFile.java' to whateve file you want to parse)
    mvn exec:java -Dexec.args="path/to/JavaFile.java"
    ```
 
