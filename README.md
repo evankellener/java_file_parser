@@ -78,6 +78,20 @@ This project will evolve into a Smart Documentation Assistant using LangChain, w
    output/ClassName.json
    ```
 
+## Running the server
+
+1. cd into node-backend and run the index.js file
+   ```
+   cd node-backend
+   node index.js
+   ```
+   you should get the following message:
+   ```
+   Server is running on http://localhost:3000
+   ```
+
+
+
 ## Technology Stack
 - Java
 - Maven
